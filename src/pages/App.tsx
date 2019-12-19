@@ -5,6 +5,8 @@ import AppHeader from 'components/AppHeader';
 import style from './App.module.less';
 
 const App = () => {
+  const a: { b?: { c: number } } = {};
+  console.log(a.b?.c);
   return (
     <div className={style.App}>
       <header className={style.header}>
